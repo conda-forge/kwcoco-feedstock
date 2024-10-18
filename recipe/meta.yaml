@@ -1,5 +1,5 @@
 {% set name = "kwcoco" %}
-{% set version = "0.8.4" %}
+{% set version = "0.8.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/kwcoco-{{ version }}.tar.gz
-  sha256: 8dec4e6ce0cde8f6dd6af87ac8c1c05b6ccf3bbaf84e2d0c09b9ca7c248dac71
+  sha256: d3365e2a340dfd1c9f34d9e4183252b73fed840d572debc9b1841dfaa797ce15
 
 build:
   noarch: python
