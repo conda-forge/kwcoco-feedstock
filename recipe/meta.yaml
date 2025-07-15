@@ -1,5 +1,5 @@
 {% set name = "kwcoco" %}
-{% set version = "0.8.7" %}
+{% set version = "0.8.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,14 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/kwcoco-{{ version }}.tar.gz
-  sha256: 172c66903c36babba9513f18fea265153f5e46ec6aa2c152ef576588e3c173d7
+  sha256: db88ddfdba71650b7197338f37d047b0fb73f729e2b7a034f571f84b8e04e83a
 
 build:
   noarch: python
   entry_points:
     - kwcoco = kwcoco.cli.__main__:main
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
